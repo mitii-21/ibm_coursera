@@ -1,0 +1,12 @@
+Rows used: 90
+Features after encoding: 21
+Target: Class
+Best model by held-out F1: Decision Tree
+
+              Model  Best CV F1  Test Accuracy  Precision   Recall       F1                                                       Best Parameters
+      Decision Tree    0.881631       0.888889   0.916667 0.916667 0.916667                {'model__max_depth': 2, 'model__min_samples_split': 2}
+Logistic Regression    0.863815       0.833333   0.800000 1.000000 0.888889                                                     {'model__C': 0.1}
+                KNN    0.888815       0.833333   0.800000 1.000000 0.888889               {'model__n_neighbors': 7, 'model__weights': 'distance'}
+                SVM    0.888815       0.777778   0.750000 1.000000 0.857143 {'model__C': 0.1, 'model__gamma': 'scale', 'model__kernel': 'linear'}
+
+Important: performance is based on the IBM course-prepared dataset and one random 80/20 split. Do not describe it as a production-ready model or claim causal relationships.

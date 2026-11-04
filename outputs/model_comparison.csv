@@ -1,0 +1,5 @@
+Model,Best CV F1,Test Accuracy,Precision,Recall,F1,Best Parameters
+Decision Tree,0.8816308243727599,0.8888888888888888,0.9166666666666666,0.9166666666666666,0.9166666666666666,"{'model__max_depth': 2, 'model__min_samples_split': 2}"
+Logistic Regression,0.8638146167557933,0.8333333333333334,0.8,1.0,0.8888888888888888,{'model__C': 0.1}
+KNN,0.8888146167557932,0.8333333333333334,0.8,1.0,0.8888888888888888,"{'model__n_neighbors': 7, 'model__weights': 'distance'}"
+SVM,0.8888146167557932,0.7777777777777778,0.75,1.0,0.8571428571428571,"{'model__C': 0.1, 'model__gamma': 'scale', 'model__kernel': 'linear'}"

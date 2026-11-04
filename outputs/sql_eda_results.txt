@@ -1,0 +1,29 @@
+
+## launches_by_site
+SELECT LaunchSite, COUNT(*) AS launches FROM launches GROUP BY LaunchSite ORDER BY launches DESC
+  LaunchSite  launches
+CCAFS SLC 40        55
+  KSC LC 39A        22
+ VAFB SLC 4E        13
+
+## landing_rate_by_site
+SELECT LaunchSite, COUNT(*) AS launches, AVG([Class]) AS landing_rate FROM launches GROUP BY LaunchSite ORDER BY landing_rate DESC
+  LaunchSite  launches  landing_rate
+  KSC LC 39A        22      0.772727
+ VAFB SLC 4E        13      0.769231
+CCAFS SLC 40        55      0.600000
+
+## landing_rate_by_orbit
+SELECT Orbit, COUNT(*) AS launches, AVG([Class]) AS landing_rate FROM launches GROUP BY Orbit ORDER BY landing_rate DESC
+Orbit  launches  landing_rate
+  SSO         5      1.000000
+  HEO         1      1.000000
+  GEO         1      1.000000
+ES-L1         1      1.000000
+ VLEO        14      0.857143
+  LEO         7      0.714286
+   PO         9      0.666667
+  MEO         3      0.666667
+  ISS        21      0.619048
+  GTO        27      0.518519
+   SO         1      0.000000
